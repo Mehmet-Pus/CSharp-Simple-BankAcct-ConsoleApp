@@ -34,7 +34,7 @@ namespace SimpleBankAcctConsoleApp
                 // account.Debit(3500.00m);
                 // account.Withdrawal(3000.33m);
 
-                Console.Write("Update Account Information: ");
+                Console.WriteLine("Updated Account Information: ");
                 account.DisplayAccountInfo();
             }
             catch (InvalidInputException exception)

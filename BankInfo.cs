@@ -46,7 +46,7 @@ public sealed class BankInfo
            throw new InvalidInputException();
         
         _balance += amount;
-        Console.Write($"{amount} has been added successfully added! Balance is: {_balance}");
+        Console.WriteLine($"{amount} has been added successfully! Balance is: {_balance}");
     }
 
     public void Withdrawal(decimal amount)
@@ -58,7 +58,7 @@ public sealed class BankInfo
             throw new InsufficientFundsException();
         
         _balance -= amount;
-        Console.Write($"{amount} has been  withdrawn! Balance is: {_balance}");
+        Console.WriteLine($"{amount} has been  withdrawn! Balance is: {_balance}");
     }
 
     public void DisplayAccountInfo()
